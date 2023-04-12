@@ -26,10 +26,7 @@ dfs(visited, graph, '5')
 # DFS Function with adjacent list to classify edges
 
 def dfs(u, adj, visited, parent, edges):
-    """
-    This function performs depth-first search on a graph represented by an adjacency list,
-    and classifies the edges as tree edges, forward edges, and back edges.
-    """
+
     visited[u] = True
     for v in adj[u]:
         if not visited[v]:
